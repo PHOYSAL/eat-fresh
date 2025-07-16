@@ -15,7 +15,8 @@ body {
 }
 
 .btn-primary {
-
+    color: white;
+    cursor: pointer;
     font-weight: 600;
     border: none;
     padding: 10px 20px;
@@ -59,7 +60,8 @@ nav ul button a {
     color: white;
 }
 
-.nav-title {
+.nav-title,
+span {
     color: #FBA24F;
 }
 
@@ -92,20 +94,67 @@ nav ul button a {
 }
 
 .hero-img-container {
-    background: url("../images/shapes/Group\ 8450.png");
+    background-image: url("/images/shapes/Group\ 8450.png");
 }
 
 .hero-img-container img {
     width: 100%;
 }
 
+.hero-container button {
+    cursor: pointer;
+}
+
+/* banner section style  */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 0;
+    background-image: url("/images/shapes/7.png");
+}
+
+.banner-img,
+.banner-content {
+    flex-basis: 40%;
+    padding: 20px;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("/images/shapes/7.png"); */
+}
+
+.banner-img img {
+    width: 350px;
+    max-width: 100%;
+}
+
+.banner-content h4 {
+    color: #707070;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner-content p {
+    color: #18191F;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
 
 @media screen and (max-width:576px) {
+
     nav,
-    .hero-container {
+    .hero-container,
+    .banner-container {
         flex-direction: column;
     }
-    .hero-container{
+
+    .hero-container {
         text-align: center;
     }
 }
